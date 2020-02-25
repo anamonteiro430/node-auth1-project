@@ -10,7 +10,6 @@ router.use('/users', restricted, usersRouter);
 
 router.get('/hash', (req, res) => {
 	// read the Authentication header
-
 	const authentication = req.headers.authentication;
 	console.log('hash', authentication);
 
